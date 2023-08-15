@@ -1,0 +1,88 @@
+/* Chat.module.css */
+
+.scrollbar {
+  scrollbar-width: none;
+  /* ms-overflow-style: none; */
+}
+
+.chatContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+  height: calc(100% - 100px);
+  padding: 100px 0px;
+  margin-bottom: 100px; /* espaço em cima e embaixo do container */
+}
+.scrollbar::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem no Chrome, Edge e Safari */
+}
+
+.userMessage {
+  background-color: #190755;
+  border-radius: 1.5625rem 1.5625rem 0rem 1.5625rem;
+  color: #fff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 160%;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.kapAdvisorMessage {
+  background-color: #efefef;
+  border-radius: 1.5625rem 1.5625rem 1.5625rem 0rem;
+  border: 1px solid #190755;
+  color: #190755;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 160%;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.selectionButton {
+  margin: 10px 0;
+  border-radius: 3.125rem;
+  border-color: #190755;
+  color: #190755;
+  text-transform: none;
+}
+
+.inputGroup {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.icon {
+  color: #190755;
+  width: 2.25rem;
+}
+
+.emojiIcon {
+  color: #190755;
+  width: 1.6875rem;
+}
+.formContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.rowSelectBtn {
+  display: inherit;
+}
+.notchedOutline {
+  border: none;
+}
